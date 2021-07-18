@@ -71,3 +71,9 @@ img.medium{
     border-radius: 0.5 rem;
     margin: 1rem;
 }
+.card-body{
+    padding: 1rem;
+}
+.card-body >*{
+    margin-bottom: 0.5rem;
+}
