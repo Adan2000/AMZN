@@ -14,7 +14,6 @@ function App() {
             </header>
             <main>
                 <div className="row center">
-                    
                     <div className="card">
                         <a href="product.html">
                             <img className="medium" src="./images/p1/jpeg" alt="product"></img>
