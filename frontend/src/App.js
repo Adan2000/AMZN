@@ -1,4 +1,5 @@
 import React from 'react';
+import data from './data'; 
 
 function App() {
   return (
@@ -14,26 +15,32 @@ function App() {
             </header>
             <main>
                 <div className="row center">
-                    <div className="card">
-                        <a href="product.html">
-                            <img className="medium" src="./images/p1/jpeg" alt="product"></img>
-                            <div className="card-body">
-                                <a href="product.html">
-                                    <h2>Nike Slim shirt</h2>
-                                </a>
-                                <div className="rating">
-                                <span><i className="fa fa-star"></i></span>
-                                <span><i className="fa fa-star"></i></span>
-                                <span><i className="fa fa-star"></i></span>
-                                <span><i className="fa fa-star"></i></span>
-                                <span><i className="fa fa-star"></i></span>
-                            </div>
-                            <div className="price">
-                                $120
-                            </div>
-                            </div>
-                        </a>
-                    </div> 
+                    {data.products.map(product => {
+                    <div key={product._id} className="card">
+                    <a href={`/product/${product._id}`}>
+                        <img 
+                        className="medium" 
+                        src={product.image} 
+                        alt={product.name}/>
+                        <div className="card-body">
+                            <a href={`/product/${product._id}`}>
+                                <h2>{product.name}</h2>
+                            </a>
+                            <div className="rating">
+                            <span><i className="fa fa-star"></i></span>
+                            <span><i className="fa fa-star"></i></span>
+                            <span><i className="fa fa-star"></i></span>
+                            <span><i className="fa fa-star"></i></span>
+                            <span><i className="fa fa-star"></i></span>
+                        </div>
+                        <div className="price">
+                            $120
+                        </div>
+                        </div>
+                    </a>
+                </div> 
+                        })
+                    }
                 </div>
             </main>
             <footer className="row center">
