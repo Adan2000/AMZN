@@ -18,9 +18,31 @@ export default function rating(props) {
       <span>
         <i
           className={
-            rating >= 1
+            rating >= 2
               ? "fa fa-star"
-              : rating >= 0.5
+              : rating >= 1.5
+              ? "fa fa-star-half-o"
+              : "fa fa-start-o"
+          }
+        ></i>
+      </span>
+      <span>
+        <i
+          className={
+            rating >= 3
+              ? "fa fa-star"
+              : rating >= 2.5
+              ? "fa fa-star-half-o"
+              : "fa fa-start-o"
+          }
+        ></i>
+      </span>
+      <span>
+        <i
+          className={
+            rating >= 4
+              ? "fa fa-star"
+              : rating >= 3.5
               ? "fa fa-star-half-o"
               : "fa fa-start-o"
           }
@@ -31,29 +53,7 @@ export default function rating(props) {
           className={
             rating >= 1
               ? "fa fa-star"
-              : rating >= 0.5
-              ? "fa fa-star-half-o"
-              : "fa fa-start-o"
-          }
-        ></i>
-      </span>
-      <span>
-        <i
-          className={
-            rating >= 1
-              ? "fa fa-star"
-              : rating >= 0.5
-              ? "fa fa-star-half-o"
-              : "fa fa-start-o"
-          }
-        ></i>
-      </span>
-      <span>
-        <i
-          className={
-            rating >= 1
-              ? "fa fa-star"
-              : rating >= 0.5
+              : rating >= 4.5
               ? "fa fa-star-half-o"
               : "fa fa-start-o"
           }
