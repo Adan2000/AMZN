@@ -5,19 +5,59 @@ export default function rating(props) {
   return (
     <div className="rating">
       <span>
-        <i className="fa fa-star"></i>
+        <i
+          className={
+            rating >= 1
+              ? "fa fa-star"
+              : rating >= 0.5
+              ? "fa fa-star-half-o"
+              : "fa fa-start-o"
+          }
+        ></i>
       </span>
       <span>
-        <i className="fa fa-star"></i>
+        <i
+          className={
+            rating >= 1
+              ? "fa fa-star"
+              : rating >= 0.5
+              ? "fa fa-star-half-o"
+              : "fa fa-start-o"
+          }
+        ></i>
       </span>
       <span>
-        <i className="fa fa-star"></i>
+        <i
+          className={
+            rating >= 1
+              ? "fa fa-star"
+              : rating >= 0.5
+              ? "fa fa-star-half-o"
+              : "fa fa-start-o"
+          }
+        ></i>
       </span>
       <span>
-        <i className="fa fa-star"></i>
+        <i
+          className={
+            rating >= 1
+              ? "fa fa-star"
+              : rating >= 0.5
+              ? "fa fa-star-half-o"
+              : "fa fa-start-o"
+          }
+        ></i>
       </span>
       <span>
-        <i className="fa fa-star"></i>
+        <i
+          className={
+            rating >= 1
+              ? "fa fa-star"
+              : rating >= 0.5
+              ? "fa fa-star-half-o"
+              : "fa fa-start-o"
+          }
+        ></i>
       </span>
     </div>
   );
