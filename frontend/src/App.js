@@ -19,6 +19,7 @@ function App() {
           </div>
         </header>
         <main>
+            <Route paath="/" component={HomeScreen} exact></Route>
           <div>
             <div className="row center">
               {data.products.map((product) => (
