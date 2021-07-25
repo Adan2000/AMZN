@@ -21,13 +21,7 @@ function App() {
         <main>
             <Route path="/product/:id" component={ProductScreen}></Route>
             <Route paath="/" component={HomeScreen} exact></Route>
-          <div>
-            <div className="row center">
-              {data.products.map((product) => (
-                <Product key={product.id} product={product}></Product>
-              ))}
-            </div>
-          </div>
+          
         </main>
         <footer className="row center">All right resevered.</footer>
       </div>
