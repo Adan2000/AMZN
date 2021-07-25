@@ -19,6 +19,7 @@ function App() {
           </div>
         </header>
         <main>
+            <Route path="/product/:id" component={ProductScreen}></Route>
             <Route paath="/" component={HomeScreen} exact></Route>
           <div>
             <div className="row center">
