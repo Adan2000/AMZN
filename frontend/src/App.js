@@ -20,7 +20,7 @@ function App() {
         </header>
         <main>
             <Route path="/product/:id" component={ProductScreen}></Route>
-            <Route paath="/" component={HomeScreen} exact></Route>
+            <Route path="/" component={HomeScreen} exact></Route>
         </main>
         <footer className="row center">All right resevered.</footer>
       </div>
