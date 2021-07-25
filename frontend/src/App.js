@@ -1,6 +1,4 @@
 import React from "react";
-import data from "./data";
-import Product from "./components/product";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
