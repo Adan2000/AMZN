@@ -29,6 +29,16 @@ export default function ProductScreen() {
                     <div className="price">${product.price}</div>
                   </div>
                 </li>
+                <li>
+                  <div className="row">
+                    <div>Status</div>
+                    <div>
+                      {product.countInStock>0? <span className="success">In Stock</span>:
+                      <span className="error">Unavailable</span>
+                      }
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
