@@ -10,10 +10,17 @@ export default function ProductScreen() {
     <div>
         <div className="row">
           <div className="col-2">
-            <img src={product.image} alt={product.name}></img>
+            <img className="large" src={product.image} alt={product.name}></img>
           </div>
           <div  className="col-1">
-
+            <ul>
+              <li>
+                <h1>{product.name}</h1>
+              </li>
+              <li>
+                <Rating rating={product.rating} >∂</Rating>
+              </li>
+            </ul>
           </div>
           <div className="col-1">
 
