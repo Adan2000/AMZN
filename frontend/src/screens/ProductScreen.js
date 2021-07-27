@@ -18,7 +18,7 @@ export default function ProductScreen() {
                 <h1>{product.name}</h1>
               </li>
               <li>
-                <Rating rating={product.rating} >∂</Rating>
+                <Rating rating={product.rating} alt={product.name}></Rating>
               </li>
             </ul>
           </div>
