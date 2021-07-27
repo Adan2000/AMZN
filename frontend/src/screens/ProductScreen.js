@@ -21,7 +21,15 @@ export default function ProductScreen() {
             </ul>
           </div>
           <div className="col-1">
+            <div className="card car-body">
+              <ul>
+                <li>
+                  <div className="row">
 
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
     </div>
