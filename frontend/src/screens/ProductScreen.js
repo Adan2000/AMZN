@@ -14,12 +14,9 @@ export default function ProductScreen() {
           </div>
           <div  className="col-1">
             <ul>
-              <li>
-                <h1>{product.name}</h1>
-              </li>
-              <li>
-                <Rating rating={product.rating} alt={product.name}></Rating>
-              </li>
+              <li><h1>{product.name}</h1></li>
+              <li><Rating rating={product.rating} alt={product.name}></Rating></li>
+              <li>Price : ${profuct.price}</li>
             </ul>
           </div>
           <div className="col-1">
