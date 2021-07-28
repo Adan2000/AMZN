@@ -7,5 +7,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(5000, () => {
-    console.log('Server at local host 5000')
+    console.log('Serve at http://localhost:5000')
 })
