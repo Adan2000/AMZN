@@ -40,6 +40,9 @@ footer{
   justify-content: space-between;
   align-items: center;
 }
+.row.top {
+  align-items: flex-start;
+}
 .row.center{
   justify-content: center;
 }
