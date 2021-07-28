@@ -14,3 +14,5 @@ app.get('/', (req, res) => {
 app.listen(5000, () => {
     console.log('Serve at http://localhost:5000')
 })
+
+// npm i --save-dev nodemon
