@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Adan2000/AMZN/issues"
   },
-  "homepage": "https://github.com/Adan2000/AMZN#readme"
+  "homepage": "https://github.com/Adan2000/AMZN#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
