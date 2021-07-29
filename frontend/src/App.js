@@ -29,3 +29,6 @@ function App() {
 }
 
 export default App;
+
+//cd front end, npm start.
+//cd amazona, npm start.
