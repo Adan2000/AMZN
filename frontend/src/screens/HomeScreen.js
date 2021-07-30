@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Product from '../components/Product';
 import data from '../data';
 
