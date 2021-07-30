@@ -3,6 +3,7 @@ import Product from '../components/Product';
 import data from '../data';
 
 export default function HomeScreen() {
+  const [products, setProducts] = useState([])
   return (
     <div>
       <div className="row center">
