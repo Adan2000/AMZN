@@ -6,7 +6,7 @@ import MessageBox from "../components/MessageBox";
 
 export default function HomeScreen() {
   const [products, setProducts] = useState([]);
-  const [loading, seLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export default function HomeScreen() {
         setLoading(false);
         setProducts(data);
       } catch (error) {
-        setError(err.message);
+        setError(error.message);
         setLoading(false);
       }
     };
