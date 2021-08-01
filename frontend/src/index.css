@@ -1,4 +1,4 @@
-html{
+html {
   font-size: 62.5%; /* 16px 62.5 = 10px = 1rem */
   box-sizing: border-box;
 }
@@ -10,18 +10,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-#root{
+#root {
   height: 100%;
 }
-/* layout */ 
-.grid-container{
+/* layout */
+.grid-container {
   display: grid;
-  grid-template-areas: 'header''main''footer';
+  grid-template-areas: "header" "main" "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
 }
-header{
+header {
   grid-area: header;
   background-color: #203040;
 }
@@ -29,12 +29,12 @@ main {
   grid-area: main;
   padding: 1rem;
 }
-footer{
+footer {
   grid-area: footer;
   background-color: darkblue;
   color: white;
 }
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -49,7 +49,7 @@ footer{
 .col-2 {
   flex: 2 1 50rem;
 }
-.row.center{
+.row.center {
   justify-content: center;
 }
 /* Common */
@@ -61,21 +61,21 @@ h2 {
   font-size: 1.6 rem;
   padding: 1rem 0;
 }
-a{
+a {
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: orange;
 }
-ul{
+ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-li{
+li {
   margin-top: 1rem;
 }
-button{
+button {
   padding: 1rem;
   border-radius: 0.5rem;
   border: 0.1rem #a4a4a4 solid;
@@ -86,17 +86,17 @@ button{
   background-color: #f8f8f8;
   cursor: pointer;
 }
-button.primary{
+button.primary {
   background-color: #f0c040;
 }
-button.block{
+button.block {
   width: 100%;
 }
-button:hover{
+button:hover {
   border: 0.1rem #404040 solid;
 }
 /* header */
-header a{
+header a {
   color: white;
   padding: 1rem;
 }
@@ -111,7 +111,7 @@ img {
   max-width: 90rem;
   width: 100%;
 }
-img.medium{
+img.medium {
   max-width: 29rem;
   width: 100%;
 }
@@ -120,46 +120,46 @@ img.large {
 }
 /* card */
 
-.card{
+.card {
   border: 0.1rem #c0c0c0 solid;
   background-color: #f8f8f8;
   border-radius: 0.5 rem;
   margin: 1rem;
 }
-.card-body{
+.card-body {
   padding: 1rem;
 }
-.card-body >*{
+.card-body > * {
   margin-bottom: 0.5rem;
 }
-.price{
+.price {
   font-size: 2rem;
 }
 /* rating */
-.rating span{
+.rating span {
   color: #f0c040;
   margin: 0.1rem;
 }
-.rating span:last-child{
-  color: #404040
+.rating span:last-child {
+  color: #404040;
 }
 /* alrert */
-.success{
+.success {
   color: #20a020;
 }
-.error{
+.error {
   color: #a02020;
 }
-.danger{
+.danger {
   padding: 1rem;
   border: 0.1rem solid transparent;
   border-radius: 0.5rem;
 }
-.alert-info{
+.alert-info {
   color: #2020a0;
   background-color: #e0e0ff;
 }
-.alert-error{
+.alert-error {
   color: #a02020;
   background-color: #ffe0e0e0;
 }
