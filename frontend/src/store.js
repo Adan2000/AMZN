@@ -6,6 +6,6 @@ const reducer = (state, action) => {
     return {products: data.products}
 }
 
-const store = createStore(reducer, initialState);
+const store = createStore(reducer, initialState, compose(applyMiddleware(think)));
 
 export default store;
