@@ -6,7 +6,7 @@ const initialState = {};
 const reducer = (state, action) => {
   return { products: data.products };
 };
-
+const composeEhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
 const store = createStore(
   reducer,
   initialState,
