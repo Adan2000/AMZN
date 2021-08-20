@@ -6,11 +6,11 @@ const initialState = {};
 const reducer = (state, action) => {
   return { products: data.products };
 };
-const composeEhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+const composeEhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 const store = createStore(
   reducer,
   initialState,
-  compose(applyMiddleware(thunk))
+  composeEhancer(applyMiddleware(thunk))
 );
 
 export default store;
