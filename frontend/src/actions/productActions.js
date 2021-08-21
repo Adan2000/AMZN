@@ -5,7 +5,9 @@ export const listProducst = () => async (dispatch) => {
         type: PRODUCTS_LIST_REQUEST
     })
     try{
+        const { data } = await axios.get("/api/products");
+    } catch(error){
 
-    } catch(error){}
-    
+    }
+
 }
