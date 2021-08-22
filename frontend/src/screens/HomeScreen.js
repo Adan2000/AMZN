@@ -5,9 +5,8 @@ import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
 
 export default function HomeScreen() {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+
+  const productList = useSelector( (state) => state.productList )
 
   useEffect(() => {
     const fetchData = async () => {
