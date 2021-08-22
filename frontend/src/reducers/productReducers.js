@@ -4,7 +4,7 @@ const {
     PRODUCTS_LIST_FAIL,
 } = require('../constants/productConstants')
 
-const productListReducer = (state, action) => {
+ export const productListReducer = (state = { products: [] }, action) => {
     switch(action.type){
     case PRODUCTS_LIST_REQUEST:
         return { loading: true };
