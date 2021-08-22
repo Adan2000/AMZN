@@ -3,9 +3,9 @@ import { PRODUCTS_LIST_REQUEST, PRODUCTS_LIST_SUCCESS } from "../constants/produ
 const productListReducer = (state, reducer) => {
     switch(action.type){
     case PRODUCTS_LIST_REQUEST:
-        return {loading: true}
+        return {loading: true};
         case: PRODUCTS_LIST_SUCCESS
-            return {}
+            return { loading: false, products: action.payload }
         default: 
         return state;
     }
