@@ -31,4 +31,3 @@ export default function HomeScreen() {
   );
 }
 //option shift f to clean code
-//123456789
