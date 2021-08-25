@@ -3,7 +3,7 @@ import Product from "../components/Product";
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
 import { useSelector, useDispatch } from "react-redux";
-import { listProducts } from "../actions/productActions";
+import { listProducts } from '../actions/productActions'
 
 export default function HomeScreen() {
   const dispatch = useDispatch()
@@ -12,7 +12,7 @@ export default function HomeScreen() {
 
   useEffect(() => {
     dispatch(listProducts())
-  }, []);
+  }, );
 
   return (
     <div>
