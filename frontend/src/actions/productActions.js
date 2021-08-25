@@ -1,4 +1,9 @@
-import { PRODUCTS_LIST_FAIL, PRODUCTS_LIST_REQUEST, PRODUCTS_LIST_SUCCESS } from "../constants/productConstants"
+import { 
+    PRODUCTS_LIST_FAIL, 
+    PRODUCTS_LIST_REQUEST, 
+    PRODUCTS_LIST_SUCCESS,
+    PRODUCTS_DETAILS_REQUEST
+} from "../constants/productConstants"
 import Axios from 'axios'
 
 export const listProducts = () => async (dispatch) => {
@@ -11,5 +16,8 @@ export const listProducts = () => async (dispatch) => {
     } catch(error){
         dispatch({type: PRODUCTS_LIST_FAIL, payload: error.message})
     }
+}
+
+export const detailsProduct = (productId) => async(dispatch) => {
 
 }
