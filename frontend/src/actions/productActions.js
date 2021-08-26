@@ -3,7 +3,8 @@ import {
     PRODUCTS_LIST_REQUEST, 
     PRODUCTS_LIST_SUCCESS,
     PRODUCTS_DETAILS_REQUEST,
-    PRODUCTS_DETAILS_SUCCESS
+    PRODUCTS_DETAILS_SUCCESS,
+    PRODUCTS_DETAILS_FAIL
 } from "../constants/productConstants"
 import Axios from 'axios'
 
@@ -24,5 +25,9 @@ export const detailsProduct = (productId) => async(dispatch) => {
     try {
         const { data } = Axios.get(`/api/products/${productId}`)
         dispatch({ type: PRODUCTS_DETAILS_SUCCESS, payload: data})
+    } catch (error) {
+        dispatch({
+            type: PRODUCTS_DETAILS_FAIL,
+        })
     }
 }
