@@ -20,4 +20,7 @@ export const listProducts = () => async (dispatch) => {
 
 export const detailsProduct = (productId) => async(dispatch) => {
     dispatch({ type: PRODUCTS_DETAILS_REQUEST, payload: productId })
+    try {
+        const { data } = Axios.get(`/api/products/${productId}`)
+    }
 }
